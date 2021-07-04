@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Radio | Incremento o decremento de número</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    
+    <div class="contenedor">
+        
+        <form action="" method="GET" class="formulario">
+            
+            <!-- INPUT RADIO -->
+            <h3>Input Radio</h3>
+            <div class="lista-radio">
+
+
+                <div class="g-radio">
+                    <input type="radio" name="cursos" id="java">
+                    <label for="java" class="content-rb" >
+                        JavaScript desde cero
+                        <span class="rb-marca"></span>
+                    </label>
+                </div>
+
+                <div class="g-radio">
+                        <input type="radio" name="cursos" id="css">
+                        <label for="css" class="content-rb" >
+                            HTML y CSS desde cero
+                            <span class="rb-marca"></span>
+                        </label>
+                </div>
+
+                <div class="g-radio">
+                    <input type="radio" name="cursos" id="php">
+                    <label for="php" class="content-rb" >
+                        PHP desde cero
+                        <span class="rb-marca"></span>
+                    </label>
+                </div>
+    
+            </div>
+
+            <h3>Incremento o decremento de número</h3>
+            <div class="input-count">
+                <button class="btn-input" type="button" data-decrease>
+                    <i class="fas fa-minus"></i>
+                </button>
+
+                <input type="text" value="1" name="cantidad">
+
+                <button class="btn-input" type="button" data-increase>
+                    <i class="fas fa-plus"></i>
+                </button>
+
+            </div>
+
+            <div class="input-count">
+
+                <button class="btn-input" type="button" data-decrease>
+                    <i class="fas fa-minus"></i>
+                </button>
+
+                <input type="text" value="0" name="cantidad">
+
+                <button class="btn-input" type="button" data-increase>
+                    <i class="fas fa-plus"></i>
+                </button>
+
+            </div>
+            
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
